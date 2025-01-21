@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -57,3 +58,7 @@ Make sure you have the following installed on your system:
 1. Clone this repository:  
    ```bash
    git clone https://github.com/your-username/TaskBlitz.git
+=======
+# TaskBlitz
+TaskBlitz is an advanced, feature-packed to-do list application designed to help you manage your tasks with precision and style. Whether it's organizing daily tasks, prioritizing important projects, or tracking progress, TaskBlitz empowers you to stay productive and focused.
+>>>>>>> b3e0332db2db775090f57c9dd94e925d826187ee
