@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar { 
+  width: 15%;
+  background-color: #ddf0dd;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile-picture {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar .active {
+  font-weight: bold;
+}
+
+.task-progress {
+  text-align: center;
+}
+
+.progress-bar {
+  background: #ccc;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progress {
+  background: #4caf50;
+  height: 100%;
+  transition: width 0.3s;
+}
+
+/* Main Content Styles */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.task-input {
+  margin: 20px 0;
+  display: flex;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+}
+
+.task-input button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.tasks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tasks li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.tasks li.completed span {
+  text-decoration: line-through;
+}
+
+.tasks button {
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: red;
+}
+.priority {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.priority.high {
+  color: red;
+}
+
+.priority.medium {
+  color: orange;
+}
+
+.priority.low {
+  color: green;
+}
+.notes-section {
+  width: 25%;
+  background-color: #ddf0dd;
+  padding: 20px;
+  border-left: 1px solid white;
+}
+
+.notes-input {
+  margin-bottom: 20px;
+}
+
+.notes-input select,
+.notes-input textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.notes-display ul {
+  list-style: none;
+  padding: 0;
+}
+
+.notes-display li {
+  margin-bottom: 10px;
+}
