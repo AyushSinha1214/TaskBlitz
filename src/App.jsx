@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 
 const App = () => {
@@ -15,6 +15,18 @@ const App = () => {
   const [filterPriority, setFilterPriority] = useState("All");
   const [selectedTaskId, setSelectedTaskId] = useState("");
   const [note, setNote] = useState("");
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme") || "light";
+    setTheme(savedTheme);
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
+  };
 
   const addTask = () => {
     if (newTask.trim()) {
@@ -58,13 +70,14 @@ const App = () => {
   const completedTasks = filteredTasks.filter((task) => task.completed).length;
 
   return (
-    <div className="app">
+    <div className={`app ${theme}`}>
       <aside className="sidebar">
         <div className="sidebar-header">
           <h2>DoIt</h2>
           <div className="sidebar-icons">
-            <button>🔍</button>
-            <button>🌙</button>
+            <button onClick={toggleTheme}>
+              {theme === "light" ? "🌙" : "☀️"}
+            </button>
           </div>
         </div>
         <p>Hey, User</p>
