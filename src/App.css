@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,7 +12,7 @@ body {
 }
 
 /* Sidebar Styles */
-.sidebar { 
+.sidebar {
   width: 15%;
   background-color: #ddf0dd;
   padding: 20px;
@@ -127,6 +127,7 @@ body {
   cursor: pointer;
   color: red;
 }
+
 .priority {
   margin-left: 10px;
   font-weight: bold;
@@ -143,6 +144,7 @@ body {
 .priority.low {
   color: green;
 }
+
 .notes-section {
   width: 25%;
   background-color: #ddf0dd;
@@ -169,4 +171,65 @@ body {
 
 .notes-display li {
   margin-bottom: 10px;
+}
+
+/* Light Theme */
+.app.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.app.light .sidebar {
+  background-color: #ddf0dd;
+}
+
+.app.light .notes-section {
+  background-color: #ddf0dd;
+}
+
+/* Dark Theme */
+.app.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.app.dark .sidebar {
+  background-color: #1e1e1e;
+}
+
+.app.dark .notes-section {
+  background-color: #1e1e1e;
+}
+
+.app.dark .task-input input,
+.app.dark .notes-input textarea,
+.app.dark .task-input select {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+.app.dark .progress-bar {
+  background: #444;
+}
+
+.app.dark .progress {
+  background: #bb86fc;
+}
+
+.app.dark button {
+  color: #fff;
+  background: #333;
+}
+
+.app.dark .priority.high {
+  color: red;
+}
+
+.app.dark .priority.medium {
+  color: orange;
+}
+
+.app.dark .priority.low {
+  color: green;
 }
